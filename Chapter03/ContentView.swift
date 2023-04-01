@@ -14,10 +14,19 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            ZStack {
+                Text ("A")
+                    .font(.system(size: 40))
+                    .foregroundColor(Color.red)
+                    .offset(x: 2, y: 2)
+                Text ("A")
+                    .font(.system(size: 40))
+            }
         }
         .padding()
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
